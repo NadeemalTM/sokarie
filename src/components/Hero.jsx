@@ -16,7 +16,7 @@ const Hero = () => {
         <button className="cta-button">Shop Now</button>
       </motion.div>
       <div className="hero-image">
-        <img src="/images/hero.jpg" alt="Hero" />
+        <img src="https://picsum.photos/500/300?random=hero" alt="Hero" />
       </div>
     </section>
   );
