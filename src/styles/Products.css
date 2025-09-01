@@ -1,0 +1,13 @@
+.products {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.products .filters {
+  flex: 0 0 300px;
+}
+
+.products .product-grid {
+  flex: 1;
+}
