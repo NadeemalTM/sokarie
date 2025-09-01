@@ -41,6 +41,39 @@ const products = [
     image: "/images/sportjacket1.jpg",
     rating: 4.3,
     description: "Lightweight sport wear jacket with water-resistant fabric."
+  },
+  {
+    id: 4,
+    name: "Running Shoes",
+    category: "shoes",
+    price: 80,
+    colors: ["black", "white", "blue"],
+    sizes: ["7", "8", "9", "10", "11"],
+    image: "/images/runningshoes1.jpg",
+    rating: 4.6,
+    description: "Lightweight running shoes with excellent cushioning."
+  },
+  {
+    id: 5,
+    name: "Baseball Cap",
+    category: "accessories",
+    price: 15,
+    colors: ["red", "blue", "black"],
+    sizes: ["One Size"],
+    image: "/images/baseballcap1.jpg",
+    rating: 4.2,
+    description: "Adjustable baseball cap with breathable fabric."
+  },
+  {
+    id: 6,
+    name: "Sports Watch",
+    category: "accessories",
+    price: 120,
+    colors: ["black", "gray"],
+    sizes: ["One Size"],
+    image: "/images/sportswatch1.jpg",
+    rating: 4.8,
+    description: "Water-resistant sports watch with multiple features."
   }
 ];
 

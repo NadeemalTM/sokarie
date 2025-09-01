@@ -1,7 +1,15 @@
 .products {
+  padding: 2rem;
+}
+
+.products h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.products-content {
   display: flex;
   gap: 2rem;
-  padding: 2rem;
 }
 
 .products .filters {
@@ -10,4 +18,15 @@
 
 .products .product-grid {
   flex: 1;
+}
+
+@media (max-width: 768px) {
+  .products-content {
+    flex-direction: column;
+  }
+
+  .products .filters {
+    flex: none;
+    max-width: none;
+  }
 }

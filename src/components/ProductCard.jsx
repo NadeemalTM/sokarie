@@ -3,10 +3,17 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { useCart } from '../context/CartContext';
 import '../styles/ProductCard.css';
 
 const ProductCard = ({ product }) => {
   const [hovered, setHovered] = useState(false);
+  const { addToCart } = useCart();
+
+  const handleAddToCart = (e) => {
+    e.preventDefault();
+    addToCart(product);
+  };
 
   return (
     <motion.div
@@ -39,6 +46,9 @@ const ProductCard = ({ product }) => {
           <p className="price">${product.price}</p>
         </div>
       </Link>
+      <button className="add-to-cart-btn" onClick={handleAddToCart}>
+        Add to Cart
+      </button>
     </motion.div>
   );
 };

@@ -1,45 +1,21 @@
-# TODO: E-Commerce Website for Customized Apparel
+# TODO List for Fixing Layout Bugs, Adding Images, and More Products
 
-## Step 1: Set up Vite React Project
-- [x] Initialize Vite React app in current directory
-- [x] Install frontend dependencies: react-router-dom, framer-motion, @fortawesome/react-fontawesome, @fortawesome/free-solid-svg-icons, axios
+## 1. Fix Layout Bugs
+- [x] Adjust Products.css for proper flex layout and add responsiveness
+- [x] Add missing CSS classes in ProductCard.css (.product-image, .hover-overlay, .star-filled, .star-empty)
+- [x] Add missing add-to-cart button in ProductCard.jsx if needed
 
-## Step 2: Create Backend with Node.js/Express
-- [x] Create server folder
-- [x] Set up Express server with CORS
-- [x] Create API endpoints: /api/products, /api/cart (simple in-memory or JSON)
-- [x] Define product data JSON with categories (t-shirts, yoga pants, sportswear) and variants (colors, sizes)
+## 2. Add More Products
+- [x] Expand products array in server/index.js with additional items
+- [ ] Ensure image paths are correct and add placeholder images if necessary
 
-## Step 3: Build Core Components
-- Header/Navbar with navigation links and cart icon
-- Footer with links
-- Hero component for homepage with bold imagery
-- ProductCard with hover effects (image previews, ratings)
-- ProductGrid for listings
-- Filters sidebar for categories/sizes/colors
-- ProductDetail page with customization options
+## 3. Add Images
+- [ ] Create public/images/ folder
+- [ ] Add product images (tshirt1.jpg, yogapants1.jpg, sportjacket1.jpg, and new ones)
+- [ ] Update image paths in product data if needed
 
-## Step 4: Create Pages
-- Home: Hero banner, featured products grid
-- Products: Full grid with filters
-- ProductDetail: Detailed view with animations
-- Cart: List items, update quantities
-- Checkout: Simple form (no payment integration)
-
-## Step 5: Implement Styling and Animations
-- Create external CSS files for each page/component
-- Apply minimalist design: Black/white palette, bold sans-serif fonts
-- Add animations: Page transitions, hover effects, sliders using Framer Motion
-- Ensure responsive layouts and clean grids
-
-## Step 6: Add Assets and Functionality
-- Import placeholder images for products
-- Add icons using FontAwesome
-- Implement cart state (useContext or simple state)
-- Add interactive features: Hover for previews, filters
-
-## Step 7: Testing and Finalization
-- Run frontend and backend
-- Test navigation, product browsing, cart functionality
-- Verify animations and responsiveness
-- Make any final adjustments
+## 4. Testing and Verification
+- [ ] Test the layout on different screen sizes
+- [ ] Verify product grid displays correctly
+- [ ] Check filters functionality
+- [ ] Ensure images load properly
