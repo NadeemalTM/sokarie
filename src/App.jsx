@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import Admin from './pages/Admin';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import './App.css';
+import './styles/Theme.css';
 
 function PrivateRoute({ children }) {
   const { isAuthenticated, loading } = useAuth();

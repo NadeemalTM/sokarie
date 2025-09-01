@@ -17,36 +17,36 @@ const users = [
 const products = [
   {
     id: 1,
-    name: "Customized T-Shirt",
-    category: "t-shirts",
-    price: 25,
-    colors: ["red", "blue", "black"],
-    sizes: ["S", "M", "L", "XL"],
-    image: "https://picsum.photos/300/300?random=1",
-    rating: 4.5,
-    description: "High quality customized t-shirt with breathable fabric."
+    name: "Sokari Traditional Mask",
+    category: "masks",
+    price: 120,
+    colors: ["red", "gold", "black"],
+    sizes: ["One Size"],
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80",
+    rating: 4.8,
+    description: "Handcrafted traditional Sokari mask used in Sri Lankan dance rituals."
   },
   {
     id: 2,
-    name: "Yoga Pants",
-    category: "yoga-pants",
-    price: 40,
-    colors: ["black", "gray", "navy"],
+    name: "Traditional Dance Costume",
+    category: "costumes",
+    price: 250,
+    colors: ["red", "white", "gold"],
     sizes: ["S", "M", "L", "XL"],
-    image: "https://picsum.photos/300/300?random=2",
-    rating: 4.7,
-    description: "Comfortable and flexible yoga pants for all workouts."
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80",
+    rating: 4.9,
+    description: "Authentic costume worn by Sokari dancers, featuring intricate designs."
   },
   {
     id: 3,
-    name: "Sport Wear Jacket",
-    category: "sportswear",
-    price: 60,
-    colors: ["black", "white"],
-    sizes: ["M", "L", "XL"],
-    image: "https://picsum.photos/300/300?random=3",
-    rating: 4.3,
-    description: "Lightweight sport wear jacket with water-resistant fabric."
+    name: "Handmade Drum",
+    category: "instruments",
+    price: 180,
+    colors: ["brown", "black"],
+    sizes: ["One Size"],
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=300&q=80",
+    rating: 4.7,
+    description: "Traditional drum used in Sokari dance performances."
   },
   {
     id: 4,

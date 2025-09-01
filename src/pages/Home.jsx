@@ -18,7 +18,9 @@ const Home = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get('http://localhost:5000/api/products');
-        setFeaturedProducts(response.data.slice(0, 3)); // Show first 3 as featured
+        // Show first 3 Sokari-themed products as featured
+        const sokariProducts = response.data.filter(p => ['masks', 'costumes', 'instruments'].includes(p.category));
+        setFeaturedProducts(sokariProducts.slice(0, 3));
       } catch (error) {
         console.error('Error fetching products:', error);
       }
@@ -84,7 +86,7 @@ const Home = () => {
     <div className="home">
       <Hero />
       <section className="featured-products">
-        <h2>Featured Products</h2>
+        <h2>Featured Sokari Products</h2>
         <ProductGrid products={featuredProducts} />
       </section>
     </div>
