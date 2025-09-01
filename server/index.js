@@ -7,6 +7,12 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
+// Sample user data
+const users = [
+  { id: 1, email: 'admin@example.com', password: 'admin123', role: 'admin' },
+  { id: 2, email: 'user@example.com', password: 'user123', role: 'user' },
+];
+
 // Sample product data
 const products = [
   {
@@ -146,6 +152,57 @@ const products = [
 // API endpoint to get products
 app.get('/api/products', (req, res) => {
   res.json(products);
+});
+
+// API endpoint for login
+app.post('/api/login', (req, res) => {
+  const { email, password } = req.body;
+  const user = users.find(u => u.email === email && u.password === password);
+  if (user) {
+    const { password, ...userWithoutPassword } = user;
+    res.json(userWithoutPassword);
+  } else {
+    res.status(401).json({ message: 'Invalid credentials' });
+  }
+});
+
+// API endpoint to add product (admin only)
+app.post('/api/products', (req, res) => {
+  const newProduct = {
+    id: products.length + 1,
+    ...req.body,
+  };
+  products.push(newProduct);
+  res.status(201).json(newProduct);
+});
+
+// API endpoint to get product by id
+app.get('/api/products/:id', (req, res) => {
+  const product = products.find(p => p.id === parseInt(req.params.id));
+  if (product) {
+    res.json(product);
+  } else {
+    res.status(404).json({ message: 'Product not found' });
+  }
+});
+
+// API endpoint to add review to product
+app.post('/api/products/:id/reviews', (req, res) => {
+  const product = products.find(p => p.id === parseInt(req.params.id));
+  if (product) {
+    if (!product.reviews) {
+      product.reviews = [];
+    }
+    const newReview = {
+      id: product.reviews.length + 1,
+      ...req.body,
+      date: new Date().toISOString(),
+    };
+    product.reviews.push(newReview);
+    res.status(201).json(newReview);
+  } else {
+    res.status(404).json({ message: 'Product not found' });
+  }
 });
 
 app.listen(PORT, () => {

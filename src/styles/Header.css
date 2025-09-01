@@ -17,14 +17,20 @@
   text-transform: uppercase;
 }
 
-.nav a {
+.nav a,
+.nav button {
   margin-left: 1.5rem;
   font-weight: 600;
   color: #000;
   position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav button:hover {
   color: #0070f3;
 }
 
@@ -37,4 +43,19 @@
   position: absolute;
   top: -8px;
   right: -10px;
+}
+
+.user-info {
+  margin-left: 1.5rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.logout-btn {
+  margin-left: 1rem;
+  color: #d32f2f;
+}
+
+.logout-btn:hover {
+  color: #b71c1c;
 }
