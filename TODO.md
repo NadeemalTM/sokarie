@@ -10,8 +10,8 @@
 - [ ] Ensure image paths are correct and add placeholder images if necessary
 
 ## 3. Add Images
-- [ ] Create public/images/ folder
-- [ ] Add product images (tshirt1.jpg, yogapants1.jpg, sportjacket1.jpg, and new ones)
+- [x] Create public/images/ folder
+- [ ] Add product images (tshirt1.jpg, yogapants1.jpg, sportjacket1.jpg, runningshoes1.jpg, baseballcap1.jpg, sportswatch1.jpg) - Note: Images need to be added manually as binary files cannot be created via text tools
 - [ ] Update image paths in product data if needed
 
 ## 4. Testing and Verification
